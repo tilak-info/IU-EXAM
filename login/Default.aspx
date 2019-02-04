@@ -25,7 +25,7 @@
       <img src="logo.png" class="center" />
       <ul class="tab-group">
         <li class="active"><a  href="Default.aspx">Log In</a></li>
-        <li ><a href="signup.aspx">Sign Up</a></li>
+        <li ><a href="signup.aspx">Student`S Marks</a></li>
       </ul>
       
       <div class="tab-content">

@@ -58,10 +58,10 @@
 
             <asp:Button ID="Button3" runat="server" CssClass="btn btn-primary btn-sm" Text="Submit" OnClick="Button3_Click" />
             <asp:Button ID="Button4" runat="server" CssClass="btn btn-danger btn-sm" Text="Reset" />
-              </div>
+              
     <asp:Label ID="Label5" runat="server" ></asp:Label>
         </form>
-        
+        </div>
          
 </asp:Content>
 

@@ -24,7 +24,7 @@
       <ul class="tab-group">
         
         <li ><a href="Default.aspx">Log In</a></li>
-        <li class="active"><a href="signup.aspx">Sign Up</a></li>
+        <li class="active"><a href="signup.aspx">Student`S Marks</a></li>
       </ul>
       
       
@@ -32,40 +32,26 @@
          <form id="form2" runat="server">  
                   
         <div id="signup">   
-          <h1>Sign Up for Free</h1>
+          <h1>Enter Your Enrollment No.</h1>
           
           
           
-          <div class="top-row">
+          
+
             <div class="field-wrap">
               <label>
-                First Name<span class="req">*</span>
+                Enrollment No.<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <asp:TextBox ID="TextBox1" runat="server"  ></asp:TextBox>
             </div>
         
             <div class="field-wrap">
-              <label>
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text"required autocomplete="off"/>
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter Your Enrollment No...." ControlToValidate="TextBox1" Font-Bold="True" Font-Size="Large" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
-          </div>
 
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
+
           
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-          <asp:Button ID="Button2" class="button button-block" runat="server" Text="Get Started"   />
+                    <asp:Button ID="Button2" CssClass="button button-block" runat="server" Text="Get Your Marks" OnClick="Button2_Click"   />
           <%--<button type="submit" class="button button-block"/>Get Started</button>--%>
           
           

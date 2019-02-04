@@ -11,4 +11,9 @@ public partial class login_signup : System.Web.UI.Page
     {
 
     }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        Session["s_e_marks"] = TextBox1.Text;
+        Response.Redirect("~/Student/S_Marks.aspx");
+    }
 }
